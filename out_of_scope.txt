@@ -1,0 +1,6 @@
+./lib/Uint512.sol
+./test/Float128Fuzz.t.sol
+./test/FloatCommon.sol
+./test/FloatUtils.sol
+./test/gasReport/GasHelpers.sol
+./test/gasReport/GasReport.t.sol

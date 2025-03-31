@@ -1,0 +1,17 @@
+{
+  "name": "@thrackle-io/float128",
+  "version": "0.0.1",
+  "description": "Floating-point library base 10 optimized for Solidity",
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "prettier-plugin-solidity": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrackle-io/float128.git"
+  },
+  "author": "Thrackle",
+  "license": "",
+  "bugs": {},
+  "homepage": ""
+}
