@@ -1,90 +1,33 @@
 {
-  "Float": {
-    "add": {
-      "matchingexponents": {
-        "min": 499,
-        "avg": 941,
-        "max": 1556
-      },
-      "addsub": {
-        "min": 609,
-        "avg": 1331,
-        "max": 1791
-      },
-      "min": 596,
-      "avg": 1174,
-      "max": 1778
-    },
-    "sub": {
-      "matchingexponents": {
-        "min": 491,
-        "avg": 928,
-        "max": 1567
-      },
-      "subadd": {
-        "min": 604,
-        "avg": 1018,
-        "max": 1784
-      },
-      "min": 577,
-      "avg": 1175,
-      "max": 1769
-    },
-    "mul": {
-      "mulbyzero": {
-        "min": 295,
-        "avg": 576,
-        "max": 858
-      },
-      "min": 295,
-      "avg": 575,
-      "max": 856
-    },
-    "div": {
-      "numeratorzero": {
-        "min": 295,
-        "avg": 577,
-        "max": 860
-      },
-      "min": 296,
-      "avg": 590,
-      "max": 886
-    },
-    "sqrt": {
-      "min": 1247,
-      "avg": 1416,
-      "max": 1588
-    }
-  },
   "Packed": {
     "add": {
       "matchingexponents": {
         "min": 739,
-        "avg": 1052,
+        "avg": 1060,
         "max": 1457
       },
       "addsub": {
         "min": 1354,
-        "avg": 1472,
+        "avg": 1475,
         "max": 1528
       },
       "min": 881,
-      "avg": 1237,
+      "avg": 1227,
       "max": 1528
     },
     "sub": {
       "matchingexponents": {
         "min": 736,
-        "avg": 1028,
+        "avg": 1023,
         "max": 1392
       },
       "subadd": {
         "min": 878,
-        "avg": 962,
+        "avg": 960,
         "max": 994
       },
       "min": 878,
-      "avg": 1230,
+      "avg": 1241,
       "max": 1526
     },
     "mul": {
@@ -94,7 +37,7 @@
         "max": 171
       },
       "min": 550,
-      "avg": 957,
+      "avg": 954,
       "max": 1124
     },
     "div": {
@@ -104,12 +47,22 @@
         "max": 189
       },
       "min": 585,
-      "avg": 1125,
+      "avg": 1128,
       "max": 1238
+    },
+    "divL": {
+      "numeratorzero": {
+        "min": 190,
+        "avg": 190,
+        "max": 190
+      },
+      "min": 1149,
+      "avg": 1194,
+      "max": 1239
     },
     "sqrt": {
       "min": 1320,
-      "avg": 2178,
+      "avg": 2156,
       "max": 3108
     }
   },
