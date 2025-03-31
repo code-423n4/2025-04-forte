@@ -39,7 +39,7 @@ The library's arithmetic operations' errors have been calculated against results
 | Multiplication (mul)   | 0                |
 | Division (div/divL)    | 0                |
 | Square root (sqrt)     | 0                |
-| Natural Logarithm (ln) | 9                |
+| Natural Logarithm (ln) | 40                |
 
 # Overview
 
@@ -285,11 +285,13 @@ forge coverage --ffi --no-match-coverage test
 
 ### Coverage Report
 
+
 | File             | % Lines          | % Statements     | % Branches       | % Funcs        |
 | ---------------- | ---------------- | ---------------- | ---------------- | -------------- |
 | src/Float128.sol | 95.08% (638/671) | 94.99% (607/639) | 87.70% (164/187) | 93.33% (14/15) |
 | src/Ln.sol       | 98.90% (270/273) | 99.66% (293/294) | 100.00% (53/53)  | 57.14% (4/7)   |
 | Total            | 96.19% (908/944) | 96.46% (900/933) | 90.42% (217/240) | 81.82% (18/22) |
+
 
 ## Running Gas Benchmarks
 
@@ -300,6 +302,8 @@ forge test --ffi --match-contract GasReport
 ```
 
 ### Gas Report - Functions Using `packedFloats`
+
+The list below is meant to be indicative and results may vary depending on compiler configurations as well as fuzz test seeds; these values are not expected to be 100% accurate.
 
 | Function (and scenario)                | Min  | Average (Mean) | Max  |
 | -------------------------------------- | ---- | ------- | ---- |
@@ -313,6 +317,8 @@ forge test --ffi --match-contract GasReport
 | Multiplication (by zero)               | 171  | 171     | 171  |
 | Division                               | 585  | 1125     | 1238  |
 | Division (numerator is zero)           | 189  | 189     | 189  |
+| Division Large                         | 1149 | 1194    | 1239 |
+| Division Large (numerator is zero)     | 190  | 190     | 190  |
 | Square Root                            | 1320 | 2178    | 3108 |
 
 ## Miscellaneous
