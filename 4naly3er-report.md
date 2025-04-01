@@ -6,13 +6,13 @@
 
 | |Issue|Instances|
 |-|:-|:-:|
-| [GAS-1](#GAS-1) | For Operations that will not overflow, you could use unchecked | 212 |
+| [GAS-1](#GAS-1) | For Operations that will not overflow, you could use unchecked | 214 |
 | [GAS-2](#GAS-2) | `++i` costs less gas than `i++`, especially when it's used in `for`-loops (`--i`/`i--` too) | 1 |
 | [GAS-3](#GAS-3) | Use shift Right/Left instead of division/multiplication if possible | 2 |
 | [GAS-4](#GAS-4) | Use != 0 instead of > 0 for unsigned integer comparison | 2 |
 ### <a name="GAS-1"></a>[GAS-1] For Operations that will not overflow, you could use unchecked
 
-*Instances (212)*:
+*Instances (214)*:
 ```solidity
 File: Float128.sol
 
@@ -105,25 +105,29 @@ File: Ln.sol
 
 42:     int constant ln1dot001_M = ln1dot001_70 / int(10 ** (uint(70 - Float128.MAX_DIGITS_M - 3)));
 
-74:             exponent == 0 - int(inputL ? Float128.MAX_DIGITS_L_MINUS_1 : Float128.MAX_DIGITS_M_MINUS_1) &&
+73:             exponent == 0 - int(inputL ? Float128.MAX_DIGITS_L_MINUS_1 : Float128.MAX_DIGITS_M_MINUS_1) &&
 
-88:         int positiveExp = exp * -1;
+87:         int positiveExp = exp * -1;
 
-94:                 mantissa /= Float128.BASE_TO_THE_DIGIT_DIFF;
+93:                 mantissa /= Float128.BASE_TO_THE_DIGIT_DIFF;
 
-95:                 exp += int(Float128.DIGIT_DIFF_L_M);
+94:                 exp += int(Float128.DIGIT_DIFF_L_M);
 
-98:             uint q1 = Float128.BASE_TO_THE_MAX_DIGITS_M_X_2 / mantissa;
+97:             uint q1 = Float128.BASE_TO_THE_MAX_DIGITS_M_X_2 / mantissa;
 
-100:             uint q2 = (Float128.BASE_TO_THE_MAX_DIGITS_M * r1) / mantissa;
+99:             uint q2 = (Float128.BASE_TO_THE_MAX_DIGITS_M * r1) / mantissa;
 
-101:             uint one_over_argument_in_long_int = q1 * Float128.BASE_TO_THE_MAX_DIGITS_M + q2;
+100:             uint one_over_argument_in_long_int = q1 * Float128.BASE_TO_THE_MAX_DIGITS_M + q2;
 
-107:                 --m76;
+105:             m76 -= Float128.DIGIT_DIFF_76_L;
 
-108:                 one_over_arguments_76 = one_over_argument_in_long_int / Float128.BASE;
+106:             one_over_arguments_76 /= Float128.BASE_TO_THE_DIFF_76_L;
 
-110:             int exp_one_over_argument = 0 - int(Float128.MAX_DIGITS_M) - int(Float128.MAX_DIGITS_M_X_2) - exp;
+108:                 --m76;
+
+109:                 one_over_arguments_76 /= Float128.BASE;
+
+111:             int exp_one_over_argument = 0 - int(Float128.MAX_DIGITS_M) - int(Float128.MAX_DIGITS_M_X_2) - exp;
 
 113:                 ln(Float128.toPackedFloat(int(one_over_arguments_76), 0 - int(m76)))
 
@@ -566,4 +570,3 @@ File: Ln.sol
 810:                 if (mantissa > (987274190490 * 10 ** 64)) {
 
 ```
-
