@@ -7,7 +7,7 @@
   - Validator awards: $2,200 in USDC
   - Scout awards: $500 in USDC
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts March 31, 2025 20:00 UTC
+- Starts April 1, 2025 20:00 UTC
 - Ends April 11, 2025 20:00 UTC
 
 **Note re: risk level upgrades/downgrades**
