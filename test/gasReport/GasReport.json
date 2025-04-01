@@ -1,0 +1,101 @@
+{
+  "Packed": {
+    "add": {
+      "matchingexponents": {
+        "min": 739,
+        "avg": 1050,
+        "max": 1457
+      },
+      "addsub": {
+        "min": 1354,
+        "avg": 1474,
+        "max": 1528
+      },
+      "min": 881,
+      "avg": 1236,
+      "max": 1528
+    },
+    "sub": {
+      "matchingexponents": {
+        "min": 736,
+        "avg": 1021,
+        "max": 1392
+      },
+      "subadd": {
+        "min": 878,
+        "avg": 960,
+        "max": 994
+      },
+      "min": 878,
+      "avg": 1229,
+      "max": 1526
+    },
+    "mul": {
+      "mulbyzero": {
+        "min": 171,
+        "avg": 171,
+        "max": 171
+      },
+      "min": 550,
+      "avg": 952,
+      "max": 1124
+    },
+    "div": {
+      "numeratorzero": {
+        "min": 189,
+        "avg": 189,
+        "max": 189
+      },
+      "min": 585,
+      "avg": 1131,
+      "max": 1238
+    },
+    "divL": {
+      "numeratorzero": {
+        "min": 190,
+        "avg": 190,
+        "max": 190
+      },
+      "min": 1149,
+      "avg": 1193,
+      "max": 1239
+    },
+    "sqrt": {
+      "min": 1320,
+      "avg": 2192,
+      "max": 3108
+    },
+    "ln": {
+      "min": 50112,
+      "avg": 62647,
+      "max": 69569
+    }
+  },
+  "Helpers": {
+    "Log10": {
+      "min": 328,
+      "avg": 346,
+      "max": 351
+    },
+    "toFloat": {
+      "min": 456,
+      "avg": 1416,
+      "max": 2749
+    },
+    "toFloatNormalized": {
+      "min": 458,
+      "avg": 1401,
+      "max": 2353
+    },
+    "toPacked": {
+      "min": 281,
+      "avg": 343,
+      "max": 764
+    },
+    "toUnpacked": {
+      "min": 307,
+      "avg": 596,
+      "max": 886
+    }
+  }
+}

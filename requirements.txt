@@ -1,0 +1,5 @@
+eth-abi==4.2.1
+python-dotenv==1.0.1
+pandas==2.2.2
+matplotlib==3.9.2
+plotly==5.23.0
