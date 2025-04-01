@@ -24,13 +24,15 @@ The 4naly3er report can be found [here](https://github.com/code-423n4/2025-03-th
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 
-### Exponent Limitations
+### Exponent / Mantissa Limitations
 
 Floating number representations with exponents greater than `3000` or less than `-3000` are not within acceptable bounds for this library. Failure to abide by this limitation may result in precision loss and/or arithmetic overflows/underflows.
 
+Additionally, the maximum digits the library is meant to handle accurately are `72`. Any digits higher than that value are not expected to be secure and may result in precision loss, arithmetic overflows/underflows, or other unforeseen errors.
+
 ### Acceptable Errors in Operations
 
-The library's arithmetic operations' errors have been calculated against results from Python's Decimal library. The errors are defined in Units of Least Precision (ULP):
+The library's arithmetic operations' errors have been calculated against results from Python's Decimal library. The errors are defined in Units in the Last Place (ULP):
 
 | Operation              | Max Error (ULP) |
 | ---------------------- | ---------------- |
@@ -39,7 +41,10 @@ The library's arithmetic operations' errors have been calculated against results
 | Multiplication (mul)   | 0                |
 | Division (div/divL)    | 0                |
 | Square root (sqrt)     | 0                |
-| Natural Logarithm (ln) | 40                |
+| Natural Logarithm (ln)\* | 99                |
+
+> [!WARNING]
+> \* The precision of the Natural Logarithm function (ln) is not guaranteed for numbers that are in the $(1.0,1.1)$ range. For numbers with `≤38` significant digits, errors are generally limited to `199` ULP. However, numbers with `>38` significant digits may exhibit relative errors exceeding 50% in extreme cases.
 
 # Overview
 
@@ -320,39 +325,10 @@ The list below is meant to be indicative and results may vary depending on compi
 | Division Large                         | 1149 | 1194    | 1239 |
 | Division Large (numerator is zero)     | 190  | 190     | 190  |
 | Square Root                            | 1320 | 2178    | 3108 |
+| Natural logarithm                      | 50112 | 62647   | 69569 |
 
 ## Miscellaneous
 
 Employees of Forte and employees' family members are ineligible to participate in this audit.
 
 Code4rena's rules cannot be overridden by the contents of this README. In case of doubt, please check with C4 staff.
-
-
-# Scope
-
-*See [scope.txt](https://github.com/code-423n4/2025-04-forte/blob/main/scope.txt)*
-
-### Files in scope
-
-
-| File   | Logic Contracts | Interfaces | nSLOC | Purpose | Libraries used |
-| ------ | --------------- | ---------- | ----- | -----   | ------------ |
-| /src/Float128.sol | 1| **** | 1016 | ||
-| /src/Ln.sol | 1| **** | 514 | ||
-| /src/Types.sol | ****| **** | 2 | ||
-| **Totals** | **2** | **** | **1532** | | |
-
-### Files out of scope
-
-*See [out_of_scope.txt](https://github.com/code-423n4/2025-04-forte/blob/main/out_of_scope.txt)*
-
-| File         |
-| ------------ |
-| ./lib/Uint512.sol |
-| ./test/Float128Fuzz.t.sol |
-| ./test/FloatCommon.sol |
-| ./test/FloatUtils.sol |
-| ./test/gasReport/GasHelpers.sol |
-| ./test/gasReport/GasReport.t.sol |
-| Totals: 6 |
-
