@@ -188,7 +188,7 @@ Zero is a special case in this library. It is the only number which mantissa is 
 ## Links
 
 - **Previous audits:** N/A 
-- **Documentation:** https://github.com/thrackle-io/float128/blob/main/docs/float128.pdf
+- **Documentation:** https://github.com/code-423n4/2025-04-forte/blob/main/docs/float128.pdf
 - **Website:** https://www.forte.io/
 - **X/Twitter:** https://x.com/forteplatform
 
