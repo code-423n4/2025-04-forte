@@ -1,0 +1,1036 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-PUBLIC / forte-apr
+==============================================================
+
+[03/31/2025 13:42] thebrittfactor (pinned)
+👋 Hello and welcome to the $40,000 in USDC **Forte: Float128 Solidity Library** audit channel!
+
+📆 Audit opens Tuesday, 01 April 2025 20:00 (20:00 UTC) and runs through Friday, 11 April 2025 20:00 (20:00 UTC) (11 days).
+
+*Note: If no valid Highs or Mediums are found, the HM pool is $0.*
+
+Please give a warm welcome to the Forte team, particularly @Johnathan, @Oscar and @Gordon, who will be available for questions either here in the channel or via a PRIVATE thread in the EST/CST timezones. 
+
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any thread (private or public) and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources. 
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2025-04-forte-float128-solidity-library
+
+
+[03/31/2025 13:43] thebrittfactor
+Pinned a message.
+
+
+[03/31/2025 19:21] thebrittfactor
+❗ Noting that we're shifting the launch date for **Forte** to April 1st (tomorrow). Ending date will remain the 11th. Appreciate your understanding!
+
+
+[04/01/2025 20:10] thebrittfactor
+ℹ️  Note: DocBot will be available for this audit in the next couple of days. We appreciate your patience!
+
+
+[04/01/2025 20:10] sabanaku77
+Wow this contest is pure maths
+
+{Reactions}
+💯 (3) ➕ 😌 (2) kewk (4) 🥲 (3) 
+
+[04/01/2025 20:18] unpluggedtj
+I would like to clarify this once.
+This is technically not a protocol audit but a library audit.
+Will the judges and validators have certain level of benchmark (no funds involved) for identifying meds / highs.
+Afaik there can't be a high unless funds are involved and my assumption is any finding, even if it's a precision issue will be marked medium here.
+
+{Reactions}
+🔥 (8) 👍 (10) 
+
+[04/01/2025 20:39] emerald7017
+I told my friend, "My floating-point library is just like me sometimes I’m gas-efficient with a medium attitude, and other times I scale up to 72 digits of precision when it matters!"
+
+{Reactions}
+😁 (11) ❤️ (4) 
+
+[04/01/2025 21:37] ihtishamsudo
+a significant error in calculation results that can cause a major issue will be considered high! severties are based more on context of the protocol being audited i guess!
+
+
+[04/01/2025 21:43] ollam5434
+I'd also really appreciate clarification of rules here - it would be nice to know how big of an error constitutes a medium or high otherwise we're all just shooting in the dark.
+
+
+[04/01/2025 21:46] unpluggedtj
+I have burnt my hands once in a non-financial audit (not on C4).
+A clarification from @CloudEllie or team would be helpful.
+
+{Reactions}
+👍 (2) 
+
+[04/01/2025 21:53] rmrf480
+Fv will be the best short for this contest, it's pure math, i think it'll be best to burn it back with fv.
+
+{Reactions}
+👍 (2) this 
+
+[04/01/2025 22:18] cd_pandora
+My apologies im really bad at math
+
+{Reactions}
+hi5 
+
+[04/01/2025 22:30] laquica6728
+Hiya. Is POC compulsory, it doesn’t say so in the audit contest details
+
+
+[04/01/2025 22:56] aarif02
+Prioritize Arithmetic Operations. Start with `add`, `sub`, `mul`, and `div` as they underpin all higher-level logic.
+
+
+[04/01/2025 23:02] aarif02
+Try to catch encoding errors that could corrupt all operations.
+
+
+[04/02/2025 00:19] glightspeed
+I maybe dumb, but what is fv?
+
+
+[04/02/2025 01:27] unnamedeth.lens
+formal verification
+
+{Reactions}
+👍 (4) 
+
+[04/02/2025 03:45] samuselderg
+Hey all! Just letting you know the docbot is now live and running for this audit!
+
+🤖 Documentation bot assistance: For general questions about the codebase, give our documentation bot a try, by tagging @Docs Wolf in any thread (private or public) and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.
+
+{Reactions}
+thankyou 
+
+[04/02/2025 04:34] daniel526
+https://tenor.com/view/bookio-gif-13932157847762104386
+
+{Embed}
+https://tenor.com/view/bookio-gif-13932157847762104386
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/bookio-49D0E.png
+
+
+[04/02/2025 05:32] no.one7777
+https://tenor.com/view/cat-cat-math-math-cat-numbers-cat-funny-gif-13385485103134761656
+
+{Embed}
+https://tenor.com/view/cat-cat-math-math-cat-numbers-cat-funny-gif-13385485103134761656
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/cat-cat-math-D87D8.png
+
+
+[04/02/2025 05:39] pfapostol
+Helping each other is an important part of being a strong community. So I'll start first: 2 + 2 = 4. Hope this helps, best results for everyone.
+
+{Reactions}
+🥺 (6) 
+
+[04/02/2025 05:48] no.one7777
+1 + 1 = 3. Always had one in mind  🤯
+
+{Reactions}
+😂 
+
+[04/02/2025 06:25] tobi0x18
+I think there was a typo in your expression. not `+`, 🤔  `*` is correct : `2 * 2 = 4`
+
+
+[04/02/2025 06:32] komronkhisomov
+2**2=4
+
+{Reactions}
+➕ chefskiss (4) 
+
+[04/02/2025 06:40] bytes032
+> Afaik there can't be a high unless funds are involved and my assumption is any finding, even if it's a precision issue will be marked medium here.
+
+the judge will take into consideration the fact that assets can't be direcly stolen and judge highs with this in mind
+
+{Reactions}
+❤️ (4) 
+
+[04/02/2025 08:00] illoy_sci
+Reading the pdf docs is a mistake
+
+
+[04/02/2025 08:01] illoy_sci
+After a solid 1 hour I am now more confused than before, I should try the simple operation and look at their implementations first
+
+
+[04/02/2025 08:01] illoy_sci
+🥲
+
+
+[04/02/2025 08:15] _arnavjindal
+we all will eventually reach the same conclusion over the next 10 days.
+
+{Reactions}
+😂 (5) 
+
+[04/02/2025 08:46] 0x23r0
+√(2*2)**2 = 4   👨🏻‍🍳
+
+{Reactions}
+🫡 
+
+[04/02/2025 10:12] victorokpukpan_
+1+1+1+1 = 4 :kewk:
+
+
+[04/02/2025 10:33] sp1cymeatball
+8/2*(2+2) = 16
+
+
+[04/02/2025 10:58] sabanaku77
+My brain hurts now :ohyeah:
+
+
+[04/02/2025 11:08] anime.consumer
+i never taught simple math could made this muck fukin complex
+
+
+[04/02/2025 11:09] anime.consumer
+literally addition is around 200 lines of code ...
+
+
+[04/02/2025 11:29] tachida2k
+Hi, someone could please explain to me clearly what cases in blockchain space or maybe defi space need big number like uint512 and float128?
+
+
+[04/02/2025 12:41] riceee8969
+Also, I wanna clarify something. if I am grasping it correctly, this isn’t exactly a float128 representation right? since the **packedFloat** type stores the value either in 145-bits or 256-bits depending on the mantissa size?
+
+
+[04/02/2025 13:51] johnathan8759
+Much of the defi space has been centered around simple mathematical formulas with low precision requirements. Much of this comes from the fact that there is no native fixed-point or floating-point types in Solidity. This library can serve as a building block for those doing more complex mathematical calculations.
+
+{Reactions}
+🔥 (2) 
+
+[04/02/2025 14:11] alekso1
+Is there a way to see the part that goes out of the pdf in `float128.pdf` appendix?
+
+{Reactions}
+👀 ✅ 
+
+[04/02/2025 14:50] bid0840
+I'm going to audit float128 on the beach tonight ⛱️ LET'S GRIND
+
+{Reactions}
+🛟 
+
+[04/02/2025 15:26] thebrittfactor
+ℹ️ Wardens - the pdf link in the [readme](https://github.com/code-423n4/2025-04-forte?tab=readme-ov-file#links) has been updated, as well as the pdf doc itself to include missing some appendix pages.
+
+{Reactions}
+🙏 
+
+[04/02/2025 15:59] johnathan8759
+Can you clarify your question? Are you asking whether this follows the IEEE standard for quadruple float numbers?
+
+
+[04/02/2025 16:37] riceee8969
+Hello, its somewhat related to the IEEE format, but not exactly. What I was trying to understand is that, in the IEEE float128 representation, exactly 128 bits are used to represent a floating-point number. However, based on my understanding of this Float128 library, the representation works a bit differently.  
+
+According to the **bitmap**, the `packedFloat` format appears to use either **129 or 240 bits** for the **mantissa**, along with **16 bits** for the **exponent, sign, and flag**. This would mean that the actual floating-point representation in this library is either **145 bits** (`129 + 16`) or **256 bits** (`240 + 16`).  
+
+I just want to confirm, does this understanding sound correct?
+
+
+[04/02/2025 17:50] gordon_39360
+This information can be found in the float128.pdf as well as the bitmap in Types.sol
+
+
+[04/02/2025 18:31] riceee8969
+I see, thanks! Will take a closer look at those
+
+
+[04/02/2025 22:10] illoy_sci
+Hi there, 
+If your tests are failing and says something along the lines of "ModuleNotFoundError: No module named 'eth_abi'\n", the C4 readme instructs us to create a virtual environment but the testing set up doesnt actually use it. To resolve this issue, go into test/FloatUtils.sol and modify
+ inputs[0] = "python3" 
+to actually use the virtual environment created, such as 
+inputs[0] = "./venv/bin/python3"
+may this be helpful :neuroBucket:
+
+{Reactions}
+🐐 (7) 
+
+[04/03/2025 04:48] laquica6728
+Hello, is POC compulsory for this  competition?
+
+
+[04/03/2025 05:16] riceee8969
+Hello, follow up on this. The bitmap in Types.sol say the M_MANTISSA uses 128 bits of space but the README file says the M_MANTISSA uses 129 bits of space, wanted to confirm which one should be considered correct. Thank you!
+
+
+[04/03/2025 13:16] thebrittfactor
+PoCs are not required, but they're [recommended](https://docs.code4rena.com/roles/wardens/submission-guidelines#burden-of-proof).
+
+{Reactions}
+👍 
+
+[04/03/2025 13:48] michael_03913
+The bitmap in Types.sol is correct
+
+
+[04/03/2025 14:05] thebrittfactor
+ℹ️ Hey wardens - @michael has joined the Forte team to answer warden questions. Feel free to include them in your private threads!
+
+{Reactions}
+🙏 (3) 
+
+[04/03/2025 15:19] bryan_conquer
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/image-3934F.png
+
+
+[04/03/2025 15:20] bryan_conquer
+I'm getting this when I try to test.
+
+
+[04/03/2025 15:23] insurgence_
+use the --ffi flag while running tests.
+It's there in the docs
+
+
+[04/03/2025 15:24] insurgence_
+```forge test --ffi```
+
+
+[04/03/2025 16:31] bryan_conquer
+I have upgaded to use python3. But i still get the same error message
+
+
+[04/03/2025 16:44] bryan_conquer
+The Float128FuzzTest is keeps failing
+
+
+[04/03/2025 17:05] michael_03913
+@Bryan_Conquer are you still receiving the ffi errors or have you started to receive different errors now that you added the --ffi flag?
+
+
+[04/03/2025 17:45] laquica6728
+Thank you so much. No POC for me 🫡
+
+{Reactions}
+😂 (5) 
+
+[04/03/2025 20:22] mylifechangefast.eth_70767
+Who be this guy😂😅
+
+{Reactions}
+😂 
+
+[04/04/2025 07:27] illoy_sci
+All things aside, I really *do* recommend a PoC
+This helps signal so much and usually give more more insights into the code base when you are building it
+My personal standard is if I can't make a PoC, then it's probably not a vulnerability. Unless it's something theoratical and can't be produced easily on local environments
+
+{Reactions}
+✅ (3) 
+
+[04/04/2025 14:56] unpluggedtj
+Am I the only one who still can't wrap his head around the add function 💀
+
+{Reactions}
+😂 (5) 
+
+[04/04/2025 15:29] cybrid6924
+I wish they can extend the end date 
+Wrapping my head around the functions alone takes time
+
+
+[04/04/2025 17:26] engr.pips
+Does anyone  know why we subtracted 75 from `order_s` in the `addition algorithm` code explanation in `float128.pdf` ? I mean why not 70 or any other number?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/Screenshot_2025-04-04_at_10.22.53-443A4.png
+
+
+[04/04/2025 18:08] oscar_01076
+Hi EngPips, this Python code is "normalizing" at 75 digits (makes the mantissa of the bigger number to have 75 digits) trying to prevent an overflow if the result of the addition grows a digit more (77 digits if it had normalized to 76).  The overflow risk is valid for signed integers in Solidity, however the actual Solidity implementation uses 76 instead because we use unsigned integers for the arithmetic. The Python code snippets are trying to showcase the main philosophy of the algorithm used in Solidity, and the Solidity implementation was inspired by this work, but it is not a direct translation of it. I hope this answers your question, but if you have more doubts, please let us know
+
+
+[04/04/2025 18:48] oscar_01076
+you should tag @michael @Gordon @Johnathan and me, but I am going to be answering most of the questions today
+
+
+[04/05/2025 00:26] ykuio
+Has anyone been successful running formal verification on the code? I tried many provers and none can properly handle the inline assembly
+
+
+[04/05/2025 01:04] engr.pips
+fair enough, Thanks buddy.
+
+{Reactions}
+👍 
+
+[04/05/2025 02:59] elvisvan
+wow
+
+
+[04/05/2025 03:00] engr.pips
+As a smart contract security researcher it is important to know when a protocol codebase to be audited have come to make you learn or come to make you earn, properly identifying this and switching your mode base on it will really help you on the long run
+
+{Reactions}
+👍🏻 
+
+[04/05/2025 09:22] komronkhisomov
+assembly disassemblied my brain
+
+{Reactions}
+thisisfine (2) 💀 (3) 
+
+[04/05/2025 13:19] kobbyeugene
+This is a rookie question but I just wanna confirm this. Can I submit different reports for 1 root cause causing different issues ?
+
+
+[04/05/2025 13:21] kobbyeugene
+Have been on this add function for days💀
+
+{Reactions}
+😂 
+
+[04/05/2025 13:40] cool_fool.
+@Oscar what is the range for the exponent. (3000, -3000) and (-8192, 8191) two seprate ranges are provided in the readme
+
+
+[04/05/2025 13:41] abdalla2166
+"Floating number representations with exponents greater than 3000 or less than -3000 **are not within acceptable bounds for this library.**"
+
+
+[04/05/2025 13:42] cool_fool.
+what about this?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/image-28DD5.png
+
+
+[04/05/2025 13:55] abdalla2166
+I think It's like theoretically it can represent it in range -8192 to +8191 but practically It's restricted by the dev to -3000 to +3000 for keeping precision @Oscar @Johnathan @Gordon right?
+
+
+[04/05/2025 13:56] johnathan8759
+That is correct!
+
+
+[04/05/2025 15:40] theboiledcorn.
+I tagged you in a private thread.
+
+{Reactions}
+👍 
+
+[04/06/2025 07:44] _arnavjindal
+(-3000,3000) range is given for precision loss that is above or below the bound limits precision loss is going to happen
+
+
+[04/06/2025 07:45] abdalla2166
+this is what i said
+
+{Reactions}
+👍 
+
+[04/07/2025 02:01] franfran5067
+Hello @Johnathan, tagged you in a private thread for a question.
+
+{Reactions}
+🫡 
+
+[04/07/2025 09:19] abdalla2166
+@Johnathan check my thread too please
+
+
+[04/07/2025 13:12] bryan_conquer
+I'm still getting the error.
+
+
+[04/07/2025 13:15] johnathan8759
+The same exact error that states you need to use the --ffi flag? Can you show another screen shot with the command you're using and the error\?
+
+
+[04/07/2025 13:43] bryan_conquer
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/image-8E3B9.png
+
+{Reactions}
+👀 
+
+[04/07/2025 14:02] franfran5067
+Any error if you scroll above? Maybe missing the pip libraries, which should be installed in a venv and tests ran from here.
+
+{Reactions}
+👆 
+
+[04/07/2025 14:26] bryan_conquer
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/image-32FFC.png
+
+
+[04/07/2025 14:36] franfran5067
+Scroll more...
+
+
+[04/07/2025 14:37] franfran5067
+Here is what I get on a clean instance without using the venv
+```sh
+2025-04-07T14:35:58.851226Z ERROR cheatcodes: non-empty stderr input=["python3", "script/float128_test.py", "9999800000000019269210691067785197790883897827781245471626758617247645910871", "2531", "0", "0", "ln", "0"] stderr="Traceback (most recent call last):\n  File \"2025-04-forte/script/float128_test.py\", line 3, in <module>\n    from eth_abi import encode\nModuleNotFoundError: No module named 'eth_abi'\n"
+```
+
+{Reactions}
+👆 💯 🙏 
+
+[04/07/2025 16:10] bryan_conquer
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/image-8298A.png
+
+
+[04/07/2025 19:05] unpluggedtj
+I used pip3 instead of pip, and everything started working
+
+{Reactions}
+❤️ 🧠 👍🏻 
+
+[04/07/2025 19:33] bryan_conquer
+okay
+
+
+[04/08/2025 16:32] tylermorgan0618
+Hi @Johnathan @Oscar @Gordon 
+Can you guide me where I can see the log records of console2.log?
+
+
+[04/08/2025 16:34] tylermorgan0618
+I can't see the log recods on terminal
+
+
+[04/08/2025 16:56] codexbugmenot
+May be you're trying to log fuzz tests
+add `FOUNDRY_FUZZ_SHOW_LOGS=true` before the `forge test` command and you should be able to view logs
+
+{Reactions}
+👍 (2) 
+
+[04/08/2025 19:55] tylermorgan0618
+Thanks
+
+{Reactions}
+🤝 
+
+[04/09/2025 14:37] abdalla2166
+@GlitcHunter ما تيجي تهانط معايا هنا انا مصري
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/Screenshot_From_2025-04-09_16-35-54-D1DE3.png
+
+{Reactions}
+😂 
+
+[04/09/2025 14:51] glitchunter010
+متأكد بعد الصورة دي 😂
+
+{Reactions}
+😂 
+
+[04/10/2025 03:10] glightspeed
+Finally understood how Ln works. Pat me on the back 🤗
+
+{Reactions}
+👏 (6) c_kannapat (2) 
+
+[04/10/2025 07:56] abdalla2166
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/rxcd-lacre-CECF4.gif
+
+{Reactions}
+😂 (4) 
+
+[04/11/2025 08:46] maxzuvex
+@Johnathan @Oscar @Gordon I have a question regarding this part in doc: 
+**Exponent / Mantissa Limitations**
+Floating number representations with exponents greater than 3000 or less than -3000 are not within acceptable bounds for this library. Failure to abide by this limitation may result in precision loss and/or arithmetic overflows/underflows.
+
+Additionally, the __maximum digits the library is meant to handle accurately are 72__. Any digits higher than that value are not expected to be secure and may result in precision loss, arithmetic overflows/underflows, or other unforeseen errors.
+
+By the "maximum digits" you mean the Mantissa or the total digits? For example is 1e80 a valid input?
+
+
+[04/11/2025 16:20] agent3bood
+How important is pointing the 'root cause' of an issue? Also do we need to suggest solution?
+I am not a math machine so this is hard for me
+
+
+[04/11/2025 16:39] oscar_01076
+@MaxZuvex the mantissa of the number that is going to be converted to a packedFloat can have only up until 72 digits if high precision is expected. 1e80 has 81 digits. You could represent the same number by 1e71 with exponent 9
+
+{Reactions}
+👍 
+
+[04/11/2025 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens The **Forte: Float128 Solidity Library** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks.
+
+{Reactions}
+🫡 (3) c4services 
+
+[04/11/2025 20:21] pabel0914
+The submition is much bigger than I expected
+
+
+[04/11/2025 20:22] pabel0914
+about 400+
+
+
+[04/11/2025 20:59] illoy_sci
+:FOCUS:
+
+
+[04/11/2025 20:59] illoy_sci
+also a lot of them seem actually legit
+
+{Reactions}
+🔥 (3) 
+
+[04/11/2025 20:59] illoy_sci
+really a pool of big talent here..
+
+
+[04/11/2025 21:01] illoy_sci
+Ok the reports seem to be polarized in terms of quality
+
+
+[04/11/2025 21:02] illoy_sci
+there are some really creative and legit ones, and there are also ones that have no poc, or a poc saying the exponent of the output is not what they expected even though the number is correct, it's just regularized
+
+
+[04/12/2025 13:52] unclejeff4407
+Where can u see this
+
+
+[04/12/2025 18:34] abdalla2166
+https://code4rena.com/evaluate/2025-04-forte-float128-solidity-library
+
+{Embed}
+https://code4rena.com/evaluate/2025-04-forte-float128-solidity-library
+Evaluate Forte: Float128 Solidity Library | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/c4-og-v2-64B78.png
+
+
+[04/12/2025 19:55] unclejeff4407
+thanks!
+
+{Reactions}
+❤️ 
+
+[04/13/2025 02:39] franco_btc
+If I made a report as medium and it is taken as high valid by another validator, does my report remain as medium or as high? or is a report invalid
+
+
+[04/13/2025 03:41] daniel526
+depends on the judge's take
+
+
+[04/14/2025 01:03] glightspeed
+if your report contains enough details and PoC, it will be most likely to be judged as high as well
+
+
+[04/14/2025 01:38] glightspeed
+I read very clever findings indeed. Someone crossed the line!
+
+
+[04/14/2025 05:40] mysteryauditor
+I think the severity of issue which missing validation for the check of the sign for input of ln() function is indeed QA/low.
+
+
+[04/14/2025 05:40] mysteryauditor
+Since anyone doesn't try to calculate ln() of negative number.
+
+
+[04/14/2025 05:57] glightspeed
+Normal people won't do. Attacker does
+
+
+[04/14/2025 05:59] glightspeed
+I don't think it's allowed to discuss findings in public chats
+
+
+[04/14/2025 15:53] v_2110
+What are the approximate time estimates for triage, sponsor review and judging?
+
+
+[04/14/2025 16:06] thebrittfactor
+Our audit timeline [here](https://docs.code4rena.com/other-details/our-process) may help 🙂
+
+{Reactions}
+👍 
+
+[04/15/2025 04:17] _arnavjindal
+I just checked the dashboard so out of all high submissions only a few have been triaged so it will take time or what to triage all findings?? I know it is a noob question
+
+
+[04/15/2025 13:06] thebrittfactor
+Correct, it takes a bit for triage. The validator is close to wrapping up and the low signal issues will be processed once their review is completed.
+
+
+[04/15/2025 13:08] _arnavjindal
+Thanks for the response. This is like my first serious audit just anxious about the review
+
+{Reactions}
+hi5 
+
+[04/15/2025 23:12] mylifechangefast.eth_70767
+The numbers of solos that would be here would be crazy
+
+
+[04/16/2025 07:35] aarif02
+https://tenor.com/view/team-solo-gif-11928911099845269230
+
+{Embed}
+https://tenor.com/view/team-solo-gif-11928911099845269230
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/team-solo-A0D78.png
+
+{Reactions}
+😂 (3) 
+
+[04/16/2025 12:24] mladenov0603
+What does "triage" mean? (My question is even more noob hahaa :D)
+
+
+[04/16/2025 12:56] maxzuvex
+What would happen if someone submitted a superset of two issues? for example for one of the function that produce wrong results for x<=0, some people submitted two separate issues for x<0 and x=0.
+
+
+[04/17/2025 07:17] illoy_sci
+I believe the superset issue would be treated as the primary issue, as there are already comments like this in the current dashboard iirc. Then the separate issues can be treated as duplicated/partial duplicated
+
+{Reactions}
+👍 
+
+[04/17/2025 07:31] illoy_sci
+Hmmms... I noticed that a comment was left by the validator after one of my issue was triaged as invalid... After looking at the comment, I carefully rechecked the readMe, and then rechecked the Poc, and then rechecked the function behaviour locally. I am *pretty* confidant that the comment presents a misunderstanding and contradicts both:
+- The readme.md specification, and
+- Actual function behaviour
+I understand that this is a math library that's out of ordinary for most contests, and that validators only have 48 hours or so to quickly scan through and put up the reports triage status, let alone with all the work of grouping duplication etc.. I also understand that validator's comment is only advisory and judge needs to make the final decision. However, if it is a misunderstanding from the validator on how certain functionalities are suppose to work, it may affect many other reports... for sponsor review etc.. Is there a way to contact/communicate with the validator in any way?
+I'm not asking for like a retriage or complain something, just would like to discuss or have a bit more clarification.
+
+
+[04/17/2025 07:32] illoy_sci
+:_29_:
+
+
+[04/17/2025 08:59] chainsentry
+@thebrittfactor | C4 if i feel my finding was disputed wrongly, when do i get a chance to fight it?
+
+f-29 for example, their reasoning is the issue is valid but it happens in other math systems too. but the main issue i submitted was that it fails silently without throwing any errors which the “other math system” they mentioned all do the opposite
+
+
+[04/17/2025 13:08] thebrittfactor
+After initial judging is completed, PJ QA is opened for wardens to raise any concerns before judge decisions are finalized. However, [only SR wardens are able to participate in PJ QA](https://docs.code4rena.com/competitions/judging-criteria#post-judging-qa-pjqa). Please review the requirements [here](https://docs.code4rena.com/roles/sr-wardens) to see if you qualify!
+
+{Reactions}
+🥺 👍 
+
+[04/17/2025 15:43] felconz_73339
+Is this valid or not?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/Screenshot_20250417_173358_Chrome-A6901.jpg
+
+{Reactions}
+🤦‍♂️ 
+
+[04/17/2025 15:45] felconz_73339
+@thebrittfactor | C4 Can you clarify this please?
+
+
+[04/17/2025 16:30] codexbugmenot
+Hey @thebrittfactor | C4 ,
+The PJQA is exclusively for SR role wardens, and an issue was commented by judge that it is out of bounds, so known(-3k,3k and 72 digits), but the issue even persists within bounds so unknown , is there any way a non SR role warden can mention this i.e through private thread or something ?
+
+
+[04/17/2025 16:52] cloudellie
+I don't believe the judge has even started their review yet. And no - the docs are very clear on this: https://docs.code4rena.com/competitions/submission-guidelines#good-citizenship-is-a-requirement-for-compensation.
+
+{Reactions}
+👍 
+
+[04/17/2025 17:15] poliakovivan0707
+That's right. According to doc, I think the missing validation  issue "x < = 0 for ln" can be only low severity:
+```
+Findings that require the user to be careless or enter the wrong information into a contract call are QA or Invalid.
+```
+
+{Reactions}
+👍 (2) 
+
+[04/17/2025 18:17] mladenov0603
+What disputed status means?
+
+
+[04/17/2025 18:19] itsmetechjay
+https://discord.com/channels/810916927919620096/1352345343299162142/1361661336982913185
+
+{Reactions}
+👍 
+
+[04/21/2025 13:38] v_2110
+@CloudEllie How much time is given for PJQA?
+
+
+[04/21/2025 13:41] cloudellie
+It's typically 48 hours. You can find info about the audit process and phases [in the docs](https://docs.code4rena.com/competitions#how-competitive-audits-work).
+
+{Embed}
+https://docs.code4rena.com/competitions
+Competitions | Code4rena
+How competitive audits work at Code4rena
+
+
+[04/21/2025 13:46] thebrittfactor
+ℹ️ Reminder to review the post [here](https://discord.com/channels/810916927919620096/810936719003090974/1356599510331293788), as we enter the PJ QA phase. Thank you!
+
+{Reactions}
+👍🏻 (4) 
+
+[04/22/2025 10:42] franfran5067
+I think that this only applies to user-facing inputs, i.e. sending ETH to some random address makes them locked. Here it’s a library so there could be some intermediary calculations that would lead to non-trivial bugs where the developer expected the library to revert. My 2 cents.
+
+{Reactions}
+👍 (3) this (2) 👌 
+
+[04/24/2025 04:13] pabel0914
+when will the result come?
+
+
+[04/24/2025 11:35] thebrittfactor
+Soon! I expect sometime this week.
+
+{Reactions}
+🔥 (7) 
+
+[04/24/2025 19:39] thebrittfactor
+🤑 🎉  Awards for **Forte: Float128 Solidity Library**:
+
+$11,397.24 USDC » @montecristo
+$3,656.42 USDC » @MaxZuvex
+$2,667.13 USDC » @v2110
+$2,157.50 USDC » @Jin.R
+$1,702.79 USDC » @zØL
+$1,698.76 USDC » @Riceee
+$1,274.07 USDC » @hecker
+$770.57 USDC » @agent3bood
+$663.16 USDC » @eternal1328
+$508.37 USDC » @YouCrossTheLineAlfie
+$506.60 USDC » @Franfran
+$464.11 USDC » @zzebra83
+$458.74 USDC » @CoheeY
+$458.74 USDC » @Pabel
+$458.74 USDC » @0xdebug
+$458.74 USDC » @mst.AD
+$442.11 USDC » @K42 Ψ
+$391.05 USDC » @0xbrett8571
+$352.86 USDC » @ChainSentry
+$351.25 USDC » @gmh
+$348.57 USDC » @X-Tray
+$345.88 USDC » @Bareli
+$345.88 USDC » @patitonar
+$345.88 USDC » @Uddercover
+$345.88 USDC » @Rorschach
+$344.05 USDC » @boredpukar
+$294.74 USDC » @Unique
+
+{Reactions}
+🚀 (10) ✅ (7) 🫡 (7) c4wins (4) 💜 (4) 
+
+[04/24/2025 19:40] thebrittfactor
+$50.54 USDC » @Codex-Bugmenot
+$50.54 USDC » @JuggerNaut63
+$49.20 USDC » @nimde
+$49.20 USDC » @0x23r0
+$49.20 USDC » @Maze
+$46.51 USDC » @djshanwang
+$45.17 USDC » @who_rp
+$45.17 USDC » @rmrf480
+$45.17 USDC » @destinyhunter
+$45.17 USDC » @0xpetern
+$45.17 USDC » @Illoy Scizceneghposter
+$45.17 USDC » @felconz
+$45.17 USDC » @Akxai
+$45.17 USDC » @Theodorus
+$33.88 USDC » @LaQuica
+$33.88 USDC » @Bareli
+$5.37 USDC » @BZ
+$5.37 USDC » @hoossayn
+$5.37 USDC » @Albert
+$5.37 USDC » @MalfurionWhitehat
+$5.37 USDC » @theboiledcorn.
+$4.03 USDC » @kkk
+$4.03 USDC » @Egbe
+$4.03 USDC » @FigarlangGarling
+$4.03 USDC » @Alex Zhang
+$2.69 USDC » @soloking
+$2.69 USDC » @greg
+$2.69 USDC » @PCProdigy
+$2.69 USDC » @Minnow80539
+$2.69 USDC » @Ahmet Kulekci
+$2.69 USDC » @jerry
+$2.69 USDC » @Osuolale
+$2.69 USDC » @Orhukl
+$1.34 USDC » @0x68
+
+🏁 Findings summary
+--------------------------------------
+5 High risk findings
+1 Med risk findings
+783 wardens participated
+
+Top Hunter: montecristo
+Top Gatherer: maxzuvex
+Top QA report: eternal1328
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+⚠️ Awardees, be sure to [complete your tax reporting info](https://docs.code4rena.com/awarding/incentive-model-and-awards/awarding-process#tax-information-for-code4rena-contributors-wardens-judges-etc) if you haven't already. This must be completed within 30 days (i.e. before Saturday, 24 May 2025) to receive your award distribution for this audit.
+
+{Reactions}
+✅ (3) 🚀 (5) 🔥 (7) 🫡 (2) 🌽 (2) 🤦‍♂️ 
+
+[04/24/2025 19:51] unpluggedtj
+Congrats everyone on this one! 🎊 
+I wish the sponsors best of luck and the day I found myself on an audit where this library is being used, will surely leave me wid a smile!
+
+{Reactions}
+❤️ (5) 
+
+[04/24/2025 20:20] chainsentry
+This was a fun contest 💪🔥 see you guys on another one
+
+{Reactions}
+🫡 (4) 
+
+[04/24/2025 22:48] aarif02
+Congrats everyone for working on securing Forte: Float128. Y'all contribute in making the space safer for the future.
+
+{Reactions}
+💖 (5) thankyou 
+
+[04/25/2025 00:35] akxai
+Yo my first award from code4rena 🔥🔥
+
+{Reactions}
+🔥 (11) hi5 (2) 
+
+[04/25/2025 07:50] mansa11
+This was so fast💨
+
+
+[04/25/2025 07:51] mansa11
+Spent a day on this contest and got $0 😂
+
+
+[04/25/2025 10:02] codexbugmenot
+Congratulations to everyone who participated in the contest 🎉🎉🥳🥳
+
+{Reactions}
+❤️ (6) 
+
+[04/25/2025 12:47] johnathan8759
+Thank you for everyone who participated in making this library more resilient! We'll work on making it better based on the feedback we've received!
+
+{Reactions}
+🔥 (7) c4services (9) 🔐 (4) 💜 
+
+[04/25/2025 18:47] mladenov0603
+Does low issues get rewarded?
+
+
+[04/25/2025 20:06] emerald7017
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - forte-apr [1355258834226249988].txt_Files/qa-A727D.png
+
+
+[04/25/2025 20:21] z.0.l
+My 2nd contest and my 1st award, I'm very grateful 🙌🏾 . Thank you, this will inspire me to work even harder!!!
+
+{Reactions}
+hi5 (3) 💜 
+
+[04/25/2025 20:28] thebrittfactor
+Also, any HM issues that were downgraded to low are not eligible for awards.
+
+{Reactions}
+👍 (2) 
+
+[04/25/2025 21:26] v_2110
+My 1st contest and my 1st award on C4, I am very exciting, Thank you.
+
+{Reactions}
+💜 (11) hi5 (6) 
+
+[04/27/2025 05:58] akxai
+Just saw the announcement saying the rewards has been distributed, but I can't find any in my wallet.
+
+
+[04/27/2025 07:31] daniel526
+maybe you didn't fill your tax info or check on polygon network
+
+
+[04/27/2025 11:01] akxai
+I did
+
+
+[04/27/2025 11:02] akxai
+Lemme check on polygon network
+
+{Reactions}
+👍 (2) 
+
+[04/29/2025 02:41] mysteryauditor
+When will be next reward distribution?
+
+
+[04/29/2025 13:02] thebrittfactor
+May 24th is the 30-day deadline set in the [announcement](https://discord.com/channels/810916927919620096/1355258834226249988/1365049555820740668) for tax submissions. The second batch of awards will be sent out after that date.
+
+
+[05/27/2025 10:14] pabel0914
+When will second batch distribution be performed?
+
+
+[05/27/2025 12:54] thebrittfactor
+We've hit a bit of delay with the recent US holiday. We should have these sent out later this week. 🙂
+
+
+[06/02/2025 21:30] C4
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted 06/11/2025 21:13. Please make sure to grab anything you might need before then.
+
+
+[06/17/2025 19:00] C4
+ℹ️ Reminder: this channel will be deleted after 24 hours.
+
+
+==============================================================
+Exported 175 message(s)
+==============================================================
